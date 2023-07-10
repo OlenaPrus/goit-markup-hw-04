@@ -52,7 +52,7 @@ body{
     color: var(--hover-focus-color);
     display: flex;
     margin-left: 156px;
-    
+    margin-right: 76px;
     
 }
 .logopart {
@@ -65,19 +65,18 @@ body{
 }
 .header-container {
     display: flex;
-    
+    border-bottom: 1px solid var(--accent-bg-color);
 }
 .header {
     display: flex;
     align-items: center;
-    
-    
+        
 }
 .header-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 76px;
+    
     
 }
 .header-top {
