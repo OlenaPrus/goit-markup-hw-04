@@ -169,6 +169,9 @@ body{
 
     /*Advantages*/
 
+.hidden {
+    visibility: hidden;
+}
 .advantage-list {
     display: flex;
     gap: 24px;
@@ -176,6 +179,7 @@ body{
 }
 
 .advantage-card {
+    
     width: calc((100% - 72px) / 4);
 
 }
@@ -203,7 +207,9 @@ body{
     text-align: center;
     color: var(--title-text-color);
 }
-
+.boxfoto {
+    display: flex;
+}
 .team {
     background-color: var(--team-bg-color);
 }
@@ -215,6 +221,9 @@ body{
     text-transform: capitalize;
     color: var(--title-text-color);
     text-align: center;
+}
+.team-list {
+    display: flex;
 }
 .team-card {
     background-color: var(--white-background-color);
@@ -292,7 +301,7 @@ body{
     border: 1px solid transparent;
     border-radius: 4px;
 }
-.list-card {
+.list-card-portfolio {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
