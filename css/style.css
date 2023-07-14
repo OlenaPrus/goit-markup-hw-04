@@ -23,6 +23,8 @@ ul, ol {
 }
 img {
     display: block;
+    max-width: 100%; 
+    height: auto;
 }
           
 body{
@@ -180,7 +182,7 @@ body{
 
 .advantage-card {
     
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px)/4);
 
 }
 .advantage-title {
