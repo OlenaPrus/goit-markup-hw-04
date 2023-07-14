@@ -27,7 +27,7 @@ img {
     height: auto;
 }
           
-body{
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--white-background-color);
@@ -271,11 +271,12 @@ body{
 /*Portfolio*/
 .portfolio {
     background-color: var(--white-background-color);
+    padding-top: 96px; 
+    padding-bottom: 120px;
 }
 
 .portfolio-container {
-    padding-top: 96px; 
-    padding-bottom: 120px;
+    
 }
 .list-portfolio {
     display: flex;
