@@ -78,9 +78,9 @@ body {
 }
 .header-list {
     display: flex;
-    align-items: 
+    align-items: flex-start;
     gap: 40px;
-    
+    padding: 0 15px;
     
 }
 .header-top {
@@ -140,6 +140,7 @@ body {
     padding-bottom: 188px;
     padding-left: 472px;
     padding-right: 472px;
+    max-width: 496px;
      
 }
 .herobutton {
