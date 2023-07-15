@@ -53,6 +53,7 @@ body {
     text-transform: uppercase;
     color: var(--hover-focus-color);
     display: flex;
+    margin-right: 76px;
    /** margin-left: 156px;
     margin-right: 76px;**/
     
@@ -69,6 +70,7 @@ body {
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+
     
 }
 .header {
@@ -177,12 +179,15 @@ body {
 
     /*Advantages*/
 
+.advantages {
+    padding: 120px 0;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-     border: 0;
+    border: 0;
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
@@ -214,6 +219,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
+/*boxes*/
+
 .boxes {
     padding: 120px 0;
 }
@@ -226,15 +233,18 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: var(--title-text-color);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .boxfoto {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+/*team*/
+
 .team {
     background-color: var(--team-bg-color);
+    padding: 120px 0;
 }
 .team-title {
     font-size: 36px;
@@ -245,30 +255,40 @@ body {
     color: var(--title-text-color);
     text-align: center;
     padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+.card {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-card {
     background-color: var(--white-background-color);
-    width: calc((100% - 72px) / 4);
+    
 }
-
+.job {
+    padding: 32px 16px;
+}       
 .team-name {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 8px;
+    /*padding: 32px 16px;*/
 }
 .team-job {
     
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    text-align: center;
 
 }
 .footer {
