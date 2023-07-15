@@ -53,8 +53,8 @@ body {
     text-transform: uppercase;
     color: var(--hover-focus-color);
     display: flex;
-    margin-left: 156px;
-    margin-right: 76px;
+   /** margin-left: 156px;
+    margin-right: 76px;**/
     
 }
 .logopart {
@@ -81,6 +81,8 @@ body {
     align-items: flex-start;
     gap: 40px;
     padding: 0 15px;
+    padding-left: 76px;
+    
     
 }
 .header-top {
@@ -114,6 +116,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: flex-end;
 }
 .tel {
     
@@ -141,6 +144,7 @@ body {
     padding-left: 472px;
     padding-right: 472px;
     max-width: 496px;
+    padding: 0 15px
      
 }
 .herobutton {
