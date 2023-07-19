@@ -237,6 +237,10 @@ body {
     background-color: var(--team-bg-color);
     padding: 120px 0;
 }
+.container-team {
+    padding-top: 120px;
+}
+
 .team-title {
     font-size: 36px;
     font-weight: 700;
@@ -245,7 +249,6 @@ body {
     text-transform: capitalize;
     color: var(--title-text-color);
     text-align: center;
-    /*padding-top: 120px;*/
     margin-bottom: 72px;
 }
 .team-list {
