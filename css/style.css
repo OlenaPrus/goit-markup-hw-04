@@ -237,9 +237,6 @@ body {
     background-color: var(--team-bg-color);
     padding: 120px 0;
 }
-.container-team {
-    padding: 32px 0;
-}
 
 .team-title {
     font-size: 36px;
@@ -265,7 +262,7 @@ body {
     
 }
 .job {
-    padding: 32px 16px;
+    padding: 32px 0;
     background-color: var(--white-background-color);
 }       
 .team-name {
