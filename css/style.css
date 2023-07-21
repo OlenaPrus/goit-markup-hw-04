@@ -80,9 +80,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 40px;
-    padding: 0 15px;
         
-    
 }
 .header-top {
      
@@ -246,7 +244,6 @@ body {
     text-transform: capitalize;
     color: var(--title-text-color);
     text-align: center;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .team-list {
