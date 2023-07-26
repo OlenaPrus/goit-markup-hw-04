@@ -95,11 +95,25 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     padding: 24px 0;
+    
+}
+.current {
+    position: relative;
 }
 .menuheader:hover,
 .menuheader:focus {
     color: var(--button-hover-focus-color);
 }
+.current::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    
+}
+.current:hover::after {
+    color: var(--button-hover-focus-color);
+ }
 .address {
     font-style: normal;
     margin-left: auto;
@@ -316,13 +330,21 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    border: var(--customers-icon);
+    border: 1px solid var(--customers-icon);
+    border-radius: 4px;
+    transition-property: fill border;
 
 }
 .customers-icon {
     fill: var(--customers-icon);
 
 }
+/*.customers-icon:hover*/
+.customers-block:is(:hover) .customers-icon {
+    fill: var(--button-hover-focus-color);
+    border: 1px solid var(--button-hover-focus-color);
+}
+ 
 .footer {
     background-color: var(--title-text-color);
     padding: 100px 0;
