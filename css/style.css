@@ -12,6 +12,9 @@
     --section-hover-focus-color: #404BBF;
     --background-icon:  #E5E5E5; 
     --customers-icon: #8E8F99;
+    --modal-color: #FCFCFC;
+    --modal-background: #D9D9D9;
+    --socials-footer-hover: #31D0AA;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -95,6 +98,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .current {
@@ -106,9 +110,13 @@ body {
 }
 .current::after {
     content: "";
-    width: 48px;
+    width: 100%;
     height: 4px;
     position: absolute;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--section-hover-focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .current:hover::after {
@@ -130,6 +138,7 @@ body {
     align-items: center;
     gap: 40px;
     justify-content: flex-end;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel {
     
@@ -145,6 +154,7 @@ body {
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-size: cover;
+    /*max-width: 1440px;*/
 }
 .herotitle {
     /*Effective Solutions for Your Business*/
@@ -176,6 +186,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);    
     min-width: 169px;
     border: none; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .herobutton:hover,
@@ -280,6 +291,8 @@ body {
 .card {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
 .team-card {
     background-color: var(--white-background-color);
@@ -298,6 +311,18 @@ body {
     text-align: center;
     margin-bottom: 8px;
 }
+.team-icon-block {
+    
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    
+}
     
 .team-job {
     
@@ -306,6 +331,28 @@ body {
     color: var(--primary-text-color);
     text-align: center;
 
+}
+.team-icon {
+    fill: var(--team-bg-color);
+}
+.socials-link,
+.socials-link-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--hover-focus-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+.socials-link:hover {
+    background-color: var(--section-hover-focus-color);
 }
 /*customers*/
 
@@ -333,15 +380,19 @@ body {
     border: 1px solid var(--customers-icon);
     border-radius: 4px;
     transition-property: fill border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .customers-icon {
     fill: var(--customers-icon);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-/*.customers-icon:hover*/
-.customers-block:is(:hover) .customers-icon {
+.customers-icon:hover {
     fill: var(--button-hover-focus-color);
+}
+.customers-block:is(:hover) {
+    
     border: 1px solid var(--button-hover-focus-color);
 }
  
@@ -376,6 +427,64 @@ body {
     padding: 0;
 
 }
+.footer-title {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-background-color);
+}
+
+.footer-list {
+    display: flex;
+    gap: 120px;
+}
+
+.socials-link-footer:hover {
+    background-color: var(--socials-footer-hover);
+}
+
+/*Modal*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+   transition: opacity 300ms linear, visibility 300ms linear;
+   
+
+}
+.modal {
+    width: 408px;
+    min-height: 584px;
+    background-color: var(--modal-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms linear;
+}
+
+.backdrop .is-hidden .modal {
+    transform: translate(-50%, -50%);
+}
+.modal-close-btn {
+    border: none;
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 /*Portfolio*/
 .portfolio {
     background-color: var(--white-background-color);
@@ -405,12 +514,14 @@ body {
     padding: 12px 24px;
     border: 1px solid var(--accent-bg-color);
     border-radius: 4px;
+    transition: color background-color border box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
     background-color: var(--button-hover-focus-color);
     color: var(--white-background-color);
     border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     
 }
 .list-card-portfolio {
@@ -424,12 +535,34 @@ body {
 .card-portfolio {
     background-color: var(--white-background-color);
     width: calc((100% - 48px) / 3);
+    
+}
+.card-animation {
+    position: relative;
+    overflow: hidden;
+}
+.card-portfolio:hover .cashless-cover-text {
+    transform: translateY(0);
 }
 .container-card {
     padding: 32px 16px;
     border: 1px solid var(--accent-bg-color);
     border-top: none;
 
+}
+.cashless-cover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--team-bg-color);
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    height: 300px;
+    width: 360px;
+    padding: 40px 32px 164px 32px;
+    background-color: var(--hover-focus-color);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-portfolio {
