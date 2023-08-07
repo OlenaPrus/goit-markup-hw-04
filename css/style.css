@@ -395,20 +395,19 @@ body {
     border-radius: 4px;
     transition-property: fill border;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--customers-icon);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:is(:hover)
-.icon-link:focus {
+.icon-link:is(:focus) {
     fill: var(--button-hover-focus-color);
-    border: 1px solid var(--button-hover-focus-color);
+    border-color: var(--button-hover-focus-color);
 }
-/*.customers-icon {
+.customers-icon {
     fill: var(--customers-icon);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
-.customers-icon:is(:hover) {
+/*.customers-icon:is(:hover) {
     fill: var(--button-hover-focus-color);
     border: 1px solid var(--button-hover-focus-color);
 }*/
