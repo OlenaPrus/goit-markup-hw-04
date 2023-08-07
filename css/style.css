@@ -105,6 +105,7 @@ body {
 }
 .current {
     position: relative;
+    color: var(--button-hover-focus-color);
 }
 .menuheader:hover,
 .menuheader:focus {
