@@ -362,6 +362,11 @@ body {
 }
 /*customers*/
 
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .customers-title {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -376,6 +381,7 @@ body {
 }
 .customers-block-list {
     width: calc((100% - 120px)/6);
+    height: 88px;
     
 }
 .icon-link {
