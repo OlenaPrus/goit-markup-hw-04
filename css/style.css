@@ -452,7 +452,7 @@ body {
     margin-bottom: 16px;
 }
 
-.social-list {
+.social-list-footer {
     display: flex;
     gap: 16px;
 }
