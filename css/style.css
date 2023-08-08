@@ -585,8 +585,8 @@ body {
     position: relative;
     overflow: hidden;
 }
-.list-card-portfolio .card-portfolio:hover .cashless-cover-text,
-.list-card-portfolio .card-portfolio:focus .cashless-cover-text  {
+.portfolio-link .card-portfolio:hover .cashless-cover-text,
+.portfolio-link .card-portfolio:focus .cashless-cover-text  {
     transform: translateY(0);
 }
 
