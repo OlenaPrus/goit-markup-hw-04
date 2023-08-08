@@ -459,9 +459,9 @@ body {
     margin-bottom: 16px;
 }
 
-.footer-list {
+.footer-list-sm {
     display: flex;
-    gap: 120px;
+    margin-right: 120px;
 }
 
 .socials-link-footer:hover {
