@@ -464,11 +464,12 @@ body {
     gap: 16px;
 }
 
-.socials-link-footer:hover,
+.socials-link-footer:hover {
+    background-color: var(--socials-footer-hover);
+}
 .socials-link-footer:focus {
     background-color: var(--socials-footer-hover);
 }
-
 /*Modal*/
 .backdrop {
     position: fixed;
@@ -531,7 +532,8 @@ body {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: var(--button-hover-focus-color);
-    border: none; 
+    border: none;
+    fill: var(--white-background-color);
 
 }
 /*Portfolio*/
@@ -591,9 +593,13 @@ body {
     position: relative;
     overflow: hidden;
 }
-.card-portfolio:hover .cashless-cover-text {
+.card-portfolio:hover .cashless-cover-text,
+.card-portfolio:focus .cashless-cover-text {
     transform: translateY(0);
 }
+/*.card-portfolio:focus {
+    transform: translateY(0);
+}*/
 
 .portfolio-link {
     display: block;
