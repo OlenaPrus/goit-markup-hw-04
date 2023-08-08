@@ -457,8 +457,8 @@ body {
     gap: 16px;
 }
 
-.socials-link-footer:hover,
-.socials-link-footer:focus {
+.social-icon .socials-link-footer:hover,
+.social-icon .socials-link-footer:focus {
     background-color: var(--socials-footer-hover);
 }
  
@@ -589,9 +589,6 @@ body {
 .card-portfolio:focus .cashless-cover-text {
     transform: translateY(0);
 }
-/*.card-portfolio:focus {
-    transform: translateY(0);
-}*/
 
 .portfolio-link {
     display: block;
