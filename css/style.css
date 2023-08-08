@@ -400,7 +400,7 @@ body {
 .icon-link:hover
 .icon-link:focus {
     color: var(--button-hover-focus-color);
-    border-color: var(--button-hover-focus-color);    
+    border-color: var(--button-hover-focus-color);  
 }
 .customers-icon {
     fill: currentColor;    
@@ -419,8 +419,8 @@ body {
     
 }
 .footer-container {
-    flex-direction: column;
-    justify-content: center;
+    /*flex-direction: column;
+    justify-content: center;*/
     display: flex;
     align-items: baseline;
 }
@@ -459,13 +459,12 @@ body {
     margin-bottom: 16px;
 }
 
-.footer-list-sm {
+.social-list {
     display: flex;
-    margin-right: 120px;
     gap: 16px;
 }
 
-.socials-link-footer:hover
+.socials-link-footer:hover,
 .socials-link-footer:focus {
     background-color: var(--socials-footer-hover);
 }
