@@ -355,8 +355,8 @@ body {
     width: 40px;
     height: 40px;
 }
-.socials-link:hover,
-.socials-link:focus {
+.social-icon .socials-link:hover,
+.social-icon .socials-link:focus {
     background-color: var(--section-hover-focus-color);
 }
 /*customers*/
