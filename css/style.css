@@ -393,7 +393,6 @@ body {
     border: 1px solid var(--customers-icon);
     border-radius: 4px;
     color: var(--customers-icon);
-    transition-property: fill border-color;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
